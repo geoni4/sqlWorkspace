@@ -1,3 +1,146 @@
+-- 다중행 서브 쿼리
+
+-- 연봉 3000이상 받는 사원이 소속된 부서와 동일한 부서에서 근무하는 사원들의 정보를 출력하는 쿼리문
+
+select ename, sal, deptno
+from emp
+where deptno in (select distinct deptno from emp where sal >=3000);
+
+-- 부서 번호가 30번인 사원들의 급여 중 가장 낮은 값(950)보다 높은 급여를 받는 사원의 이름, 급여를 출력하는 쿼리문
+select ename, sal, deptno from emp where sal > any(select sal from emp where deptno = 30);
+
+-- Any 연습 - or 조건 만족하는 값이 있으면 리턴
+select * from emp where sal = any(1000, 2000, 3000);
+select * from emp where sal > any(1000, 2000, 3000);    -- > min(in(1000,2000,3000));
+select * from emp where sal >= any(1000, 2000, 3000);   -- >=1000
+select * from emp where sal < any(1000, 2000, 3000);    -- > max(in(1000,2000,3000));
+
+-- 조건을 만족하는 값이 하나라도 있으면 결과를 리턴
+
+-- 30번 소속 사원들 중에서 급여를 가장 많이 받는 사원보다 더 많은 급여를 받는 사람의 이름과 급여를 출력하는 쿼리문
+select * from emp where sal > all (select sal from emp where deptno = 30);
+select * from emp where sal > (select max(sal) from emp where deptno = 30);
+
+-- All 연습 - and 모든 좆건을 충족해야 리턴
+select * from emp where sal = all(1000, 2000, 3000);
+select * from emp where sal > all(1000, 2000, 3000);    -- > min(in(1000,2000,3000));
+select * from emp where sal >= all(1000, 2000, 3000);   -- >=1000
+select * from emp where sal < all(1000, 2000, 3000);    -- > max(in(1000,2000,3000));
+
+------- sql 50제
+-- 1> 부서 테이블의 모든 데이터를 출력
+select * from dept;
+
+-- 2> emp 테이블에서 각 사원의 직업, 사원번호, 이름, 입사일을 출력하라.
+select job, empno, ename, hiredate from emp;
+
+-- 3> emp테이블에서 직업을 출력하되, 각 항목(row)가 중복되지 않게 출력하시오
+select job from emp group by job;
+
+-- 4> 급여가 2850 이상인 사원의 이름 및 급여를 출력하라.
+select ename, sal from emp where sal >= 2850;
+
+-- 5> 사원 번호가 7566인 사원의 이름 및 부서번호를 출력하라.
+select ename, deptno from emp  where empno = 7566;
+
+
+-- 6> 급여가 1500 이상 ~ 2850 이하의 범위에 속하지 않는 모든 사원의 이름 및 급여를 출력
+select ename, sal from emp where sal not between 1500 and 2850;
+
+-- 7> 1981년 2월 20일 ~ 1981년 5월 1일에 입사한 사원의 이름, 직업 및 입사일을 출력하라.
+-- 입사일을 기준으로 해서 오름차순으로 정렬하라.
+select ename, job, hiredate from emp where hiredate between '1981-02-20' and '1981-05-01' order by hiredate;
+
+
+----------- DDL ---------------
+
+create table EMP01(
+    empno number(4),
+    ename varchar2(20),
+    sal number(7,2)
+);
+
+desc emp01;
+
+
+create table emp02 as select * from emp;
+
+
+select * from emp02;
+
+
+create table emp03 as select empno, ename from emp;
+select * from emp03;
+
+-- 테이블 구조를 변경하는 alter table
+-- 기존 테이블의 구조를 변경하기 위한 ddl 명령문인다.
+-- 테이블에 대한 구조 변경은 column의 insert, update, delete 시 사용
+
+alter table emp01 add(job varchar2(9));
+desc emp01;
+
+alter table emp01 modify (joobb varchar2(30));
+alter table emp01 drop column job;
+
+select * from emp01;
+
+-- drop table
+-- 기존 테이블의 존재를 제거한다.
+-- 한번 제거한 데이터들은 다시 복구하기 어렵기 때문에 유의
+
+drop table emp01;
+
+-- 테이블 삭젲, 무결성 제약 조건
+-- 테이블의 기본 키나 고유 키를 다른 테이블에서 참조할 경우 해당 테이블 제거 불가.
+
+
+
+-- 테이블의 모든 row을 제거하는truncate table
+-- drop table과의 차이점 : truncate는 내용만 제거하고 구조는 남는다.
+
+truncate table emp02;
+select * from emp02;
+
+-- 테이블 명 변경
+rename emp02 to test;
+select * from emp02;
+
+select * from test;
+rename test to emp02;
+
+
+
+
+desc user_tables;
+
+select * from user_tables;
+
+select table_name from user_tables;
+
+
+
+select * from all_tables;
+
+
+
+-- 테이블 내용 추가, 수정, 삭제 DML
+-- CRUD 
+-- dept 테이블을 dept02테이블로 구조만 복사
+create table dept02 as select * from dept where 1<>1;
+
+delete from dept02 where 1=1;
+select * from dept02;
+
+-- insert 예제
+insert into dept02(deptno, dname, loc) values(10, 'ACCOUNT', 'NEW YORK'); 
+commit;
+
+select * from dept02;
+rollback;
+
+
+
+
 select empno, ename from emp;
 
 select * from dept;
@@ -195,3 +338,5 @@ CREATE TABLE EMP05(
     JOB VARCHAR(9),
     DEPTNO NUMBER(2)
 );
+
+
