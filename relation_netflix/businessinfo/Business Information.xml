@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="F114C99C-DE99-48AB-CEFA-0C699C51A5FC">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 05:42:14 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2884A7DD-E741-FF0B-4EC1-C54A68C8A547" schemaObject="9890ACA5-723A-3E4A-9E80-00DD11728A4C" name="NETFLIX_MOVIE">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>NETFLIX_MOVIE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>8332673A-B706-36D1-38C5-4FA462B54C1E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MOVIE_ID" id="D957DAA1-334F-624C-640B-AD8B99C30C21">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>NETFLIX_MOVIE</sourceObjSchema>
+<sourceObjName>MOVIE_ID</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>9AA6C465-314D-6ED8-ECDE-054041A8C3A5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIE_CONTENT" id="E17E82B4-2E10-DA97-3970-EFDD621DC476">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>NETFLIX_MOVIE</sourceObjSchema>
+<sourceObjName>MOVIE_CONTENT</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>7E2B5ACD-56BB-981F-D4CF-F7B9C78D8A86</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIE_GENRE" id="96C36D03-14EB-ABDE-FEDF-760E22AB76FF">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>NETFLIX_MOVIE</sourceObjSchema>
+<sourceObjName>MOVIE_GENRE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>3953D6A3-CC4F-0814-7532-94EAEC8ED660</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIE_CAST" id="10B55D55-6DB3-EE05-C3FC-211298296779">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>NETFLIX_MOVIE</sourceObjSchema>
+<sourceObjName>MOVIE_CAST</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>DC9D074A-A31E-4754-806E-7AB0F4D89597</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIE_RELEASE_DATE" id="FBF8F105-0458-CB04-8986-F44F3A3EF683">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>NETFLIX_MOVIE</sourceObjSchema>
+<sourceObjName>MOVIE_RELEASE_DATE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>188B7EE3-7678-D323-174F-A7AE6EB1C753</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIE_FAVORITE" id="2FEB45B5-1B2C-42C9-0615-8BBA68B525D8">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>NETFLIX_MOVIE</sourceObjSchema>
+<sourceObjName>MOVIE_FAVORITE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>7FA91671-1E79-9FEE-3100-29238BA89DD9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8DDAD6E-9039-2A35-32D9-8BE655BE0F2B" schemaObject="9890ACA5-723A-3E4A-9E80-00DD11728A4C" name="NETFLIX_MOVIE_PK">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SYS_C007732</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>5B445804-932D-39F3-2BE8-8CA905B3B490</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D957DAA1-334F-624C-640B-AD8B99C30C21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

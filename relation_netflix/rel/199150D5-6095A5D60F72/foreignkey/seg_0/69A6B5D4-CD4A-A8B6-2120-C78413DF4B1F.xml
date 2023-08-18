@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="69A6B5D4-CD4A-A8B6-2120-C78413DF4B1F" containerWithKeyObject="0A8A7C88-1603-1280-AE44-32BBBD443532" localFKIndex="688853E0-3FE7-418D-2247-26F0EB6AB68F" name="FK_MEMBER_MEMBERSHIP_GRADE">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FK_MEMBER_MEMBERSHIP_GRADE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<importedID>6A50E58C-DD5C-2AE1-65E8-F949BE72B0AC</importedID>
+<referredTableLongName>SCOTT.NETFLIX_MEMBERSHIP</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>ABBB8D3A-ED8E-B722-1B35-53C1E994E036</referredTableID>
+<keyObject>A4349D56-1B88-AFE3-F25C-6A043CBA6E05</keyObject>
+<referredKeyID>A4349D56-1B88-AFE3-F25C-6A043CBA6E05</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEMBERSHIP_GRADE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

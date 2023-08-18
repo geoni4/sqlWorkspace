@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="USERS" directorySegmentName="seg_0" id="5EEF12BB-7A9C-04C5-7C36-332C95CD3BCD">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 05:42:35 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<dsInitialExtent>65536</dsInitialExtent>
+<dsMaxExtents>2147483645</dsMaxExtents>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+<minExtLen>65536</minExtLen>
+<dsCompression>NOCOMPRESS</dsCompression>
+<encrypt>NO</encrypt>
+<fileType>SMALLFILE</fileType>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="USERS.DBF" id="F766A1E4-E2EF-58A7-2FB3-B619BA85D5C2">
+<sourceConnName>scott</sourceConnName>
+<sourceObjName>C:\ORACLEXE\APP\ORACLE\ORADATA\XE\USERS.DBF</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<autoextend>ON</autoextend>
+<fileName>C:\ORACLEXE\APP\ORACLE\ORADATA\XE\USERS.DBF</fileName>
+<maxSize>1</maxSize>
+<nextBlockSize>10240</nextBlockSize>
+<size>102400</size>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="USERS2.DBF" id="6D4E93DD-EFF8-67A1-8A18-EABA639F0C86">
+<sourceConnName>scott</sourceConnName>
+<sourceObjName>C:\ORACLEXE\APP\ORACLE\ORADATA\XE\USERS2.DBF</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-18 07:26:57 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>C:\ORACLEXE\APP\ORACLE\ORADATA\XE\USERS2.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>102400</size>
+</DataFile>
+</dataFiles>
+</TableSpaceOraclev10g>
