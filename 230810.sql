@@ -4,3 +4,4 @@ select * from (
     ) m where rownum <= 20
 )
 where rnum >10;
+
