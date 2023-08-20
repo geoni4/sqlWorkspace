@@ -2,6 +2,8 @@ connect netflix/netflix;
 
 drop table NETFLIX_MEMBER;
 
+drop table NETFLIX_AUTH cascade constraints;
+
 drop table NETFLIX_MEMBER_PROFILE cascade constraints;
 
 drop table NETFLIX_ORDER cascade constraints;
@@ -14,12 +16,27 @@ drop table NETFLIX_MOVIE;
 
 
 
+
+
 create table NETFLIX_MEMBER(
     member_email varchar2(50) primary key,
     member_password char(60) not null,
     member_card_number char(16) not null,
     member_membership_grade varchar2(10) not null
 );
+
+create table NETFLIX_AUTH(
+    auth_member_email varchar2(50) not null,
+    auth_member_authority varchar2(10) not null,
+
+    constraint ix_netflix_auth UNIQUE(auth_member_email, auth_member_authority),
+    constraint fk_auth_member_email foreign key(auth_member_email) references NETFLIX_MEMBER(member_email)
+      on delete cascade
+);
+select * from all_indexes;
+drop index ix_netflix_auth;
+
+
 
 create table NETFLIX_MEMBER_PROFILE(
     member_profile_email varchar2(50) not null,
@@ -66,6 +83,7 @@ create table NETFLIX_MOVIE(
 );
 
 select * from NETFLIX_MEMBER;
+select * from NETFLIX_AUTH;
 select * from NETFLIX_MEMBER_PROFILE;
 select * from NETFLIX_ORDER;
 select * from NETFLIX_MEMBERSHIP;
