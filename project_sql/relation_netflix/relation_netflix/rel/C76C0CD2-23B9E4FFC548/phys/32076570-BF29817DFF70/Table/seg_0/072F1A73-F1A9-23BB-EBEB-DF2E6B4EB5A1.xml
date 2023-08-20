@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="NETFLIX_MEMBER_PROFILE" directorySegmentName="seg_0" id="072F1A73-F1A9-23BB-EBEB-DF2E6B4EB5A1">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:12 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>4691D1D1-ECBA-4D82-490F-9F4296D2C6B5</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B04BB007-EAFC-1961-1B53-D2F0F8DAA4ED</segment>
+<tableSpace>070357FA-96F4-5FE9-8328-96A270B33673</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEMBER_PROFILE_EMAIL" id="32A65100-4023-6943-134A-062D31EC0F3C">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:12 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEMBER_PROFILE_NAME" id="BE3209A1-3711-CAFC-D2B2-C6736E73DA05">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:12 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MEMBER_PROFILE_EMAIL" id="82093A1B-6864-B755-FC60-5DF2112E0355">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:13 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

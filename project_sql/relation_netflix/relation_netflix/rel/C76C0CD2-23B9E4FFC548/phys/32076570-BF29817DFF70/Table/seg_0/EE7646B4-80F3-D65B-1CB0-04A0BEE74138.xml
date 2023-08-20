@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="NETFLIX_AUTH" directorySegmentName="seg_0" id="EE7646B4-80F3-D65B-1CB0-04A0BEE74138">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:12 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>4691D1D1-ECBA-4D82-490F-9F4296D2C6B5</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B04BB007-EAFC-1961-1B53-D2F0F8DAA4ED</segment>
+<tableSpace>070357FA-96F4-5FE9-8328-96A270B33673</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AUTH_MEMBER_EMAIL" id="1D614DED-92FA-4056-D38A-6BE5AEA26DB3">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:12 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUTH_MEMBER_AUTHORITY" id="E1EE2B51-AF0A-7F6F-C2C2-2AE16E756CD1">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:12 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_NETFLIX_AUTH" id="25D3F819-3FBB-906B-7375-CEC3F038E17A">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:13 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>4691D1D1-ECBA-4D82-490F-9F4296D2C6B5</schemaObject>
+<segment>7DE4E2D9-8C24-A03A-5A96-42FFD64A29DA</segment>
+<tableSpace>070357FA-96F4-5FE9-8328-96A270B33673</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUTH_MEMBER_EMAIL" id="FFA8EF2A-EE25-470E-D9FF-1BE802233D97">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:13 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="IX_NETFLIX_AUTH" id="F5316414-6F4D-33B3-FF41-E8CFD7FD8427">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-20 15:51:13 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<segment>7DE4E2D9-8C24-A03A-5A96-42FFD64A29DA</segment>
+<tableSpace>070357FA-96F4-5FE9-8328-96A270B33673</tableSpace>
+<existingIndex>25D3F819-3FBB-906B-7375-CEC3F038E17A</existingIndex>
+<indexSegment>7DE4E2D9-8C24-A03A-5A96-42FFD64A29DA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>
