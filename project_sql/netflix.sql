@@ -1,6 +1,6 @@
 connect netflix/netflix;
 
-drop table NETFLIX_MEMBER;
+drop table NETFLIX_MEMBER cascade constraints;
 
 drop table NETFLIX_AUTH cascade constraints;
 
@@ -21,7 +21,7 @@ drop table NETFLIX_MOVIE;
 create table NETFLIX_MEMBER(
     member_email varchar2(50) primary key,
     member_password char(60) not null,
-    member_card_number char(16) not null,
+    member_card_number char(16),
     member_membership_grade varchar2(10) not null
 );
 
@@ -50,7 +50,7 @@ create table NETFLIX_MEMBER_PROFILE(
 create table NETFLIX_ORDER(
     order_id number(8) primary key,
     order_member_email varchar2(50) not null,
-    order_member_card_number char(16) not null,
+    order_member_card_number char(16),
     order_start_date date default sysdate,
     
     constraint fk_order_member_email
@@ -88,4 +88,27 @@ select * from NETFLIX_MEMBER_PROFILE;
 select * from NETFLIX_ORDER;
 select * from NETFLIX_MEMBERSHIP;
 select * from NETFLIX_MOVIE;
+
+insert into netflix_membership values(
+    'basic'
+    );
+
+insert into netflix_member values(
+    'tatelulove4@naver.com',
+    'Dldnjsrjs4$4',
+    null,
+    'basic'
+    );
+
+
+select * from netflix_member;
+select * from netflix_auth;
+
+insert into netflix_auth values(
+    'tatelulove4@naver.com',
+    'ROLE_USER'
+);
+
+select * from netflix_member mb, netflix_auth au
+    where mb.member_email = au.auth_member_email and mb.member_email = 'tatelulove4@naver.com';
 
