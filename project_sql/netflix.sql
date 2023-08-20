@@ -1,3 +1,5 @@
+connect netflix/netflix;
+
 drop table NETFLIX_MEMBER;
 
 drop table NETFLIX_MEMBER_PROFILE cascade constraints;
@@ -30,11 +32,12 @@ create table NETFLIX_MEMBER_PROFILE(
 
 create table NETFLIX_ORDER(
     order_id number(8) primary key,
-    order_member_card_number char(16),
+    order_member_email varchar2(50) not null,
+    order_member_card_number char(16) not null,
     order_start_date date default sysdate,
     
-    constraint fk_order_member_card_number
-        foreign key (order_member_card_number) references NETFLIX_MEMBER(member_card_number)
+    constraint fk_order_member_email
+        foreign key (order_member_email) references NETFLIX_MEMBER(member_email)
         on delete cascade
 );
 
@@ -61,3 +64,10 @@ create table NETFLIX_MOVIE(
     movie_release_date Date,
     movie_favorite char(1)
 );
+
+select * from NETFLIX_MEMBER;
+select * from NETFLIX_MEMBER_PROFILE;
+select * from NETFLIX_ORDER;
+select * from NETFLIX_MEMBERSHIP;
+select * from NETFLIX_MOVIE;
+
