@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="74C53E65-65C6-7ADE-0864-A555A36C4FAB" containerWithKeyObject="BC518098-2419-504E-2EEA-BA0F32EA5026" localFKIndex="518DA71B-1A99-0955-A949-9E5E3F9A93C8" name="FK_FAV_MOVIE">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_FAV_MOVIE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<referredTableLongName>NETFLIX.NETFLIX_MOVIE</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>104B1217-6653-E66B-62DC-A22A4C2AB9E8</referredTableID>
+<keyObject>BC48D3AC-E415-DFEC-4FE9-713266643FAF</keyObject>
+<referredKeyID>BC48D3AC-E415-DFEC-4FE9-713266643FAF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MOVIE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

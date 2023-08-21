@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CD9B6F1C-274B-C584-B15A-9DB847D7BB4A" containerWithKeyObject="F00385CF-D085-D152-DA2F-F8F71CEEB375" localFKIndex="700C4D76-E677-AC98-56A8-9480F1C7BF5B" name="FK_SA_MEMBER_SOCIAL">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_SA_MEMBER_SOCIAL</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<referredTableLongName>NETFLIX.NETFLIX_SOCIAL</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>361D6BF4-2534-F8C7-1FD9-CDA63E1A8083</referredTableID>
+<keyObject>8CF6130B-4DFC-E7AC-A568-E1360A6401FF</keyObject>
+<referredKeyID>8CF6130B-4DFC-E7AC-A568-E1360A6401FF</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>SOCIAL_PUBLISHER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

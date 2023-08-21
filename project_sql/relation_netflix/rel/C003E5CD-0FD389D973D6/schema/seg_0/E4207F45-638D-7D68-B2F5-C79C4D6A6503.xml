@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="NETFLIX" directorySegmentName="seg_0" id="E4207F45-638D-7D68-B2F5-C79C4D6A6503">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</SchemaObject>

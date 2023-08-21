@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9BC463F0-B630-30C4-3AD5-9E96C331949C" containerWithKeyObject="22E2E4C2-163B-6451-E087-DA2395869859" localFKIndex="09A331B2-2DA5-F6A0-2536-1B58704DB17B" name="FK_MEMBER_PROFILE_EMAIL">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_MEMBER_PROFILE_EMAIL</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<referredTableLongName>NETFLIX.NETFLIX_MEMBER</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>8E05AE51-0261-C78E-DB7A-AF49F7557806</referredTableID>
+<keyObject>1CAECCBD-7709-6E90-04FF-9F20A0D21F27</keyObject>
+<referredKeyID>1CAECCBD-7709-6E90-04FF-9F20A0D21F27</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEMBER_EMAIL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

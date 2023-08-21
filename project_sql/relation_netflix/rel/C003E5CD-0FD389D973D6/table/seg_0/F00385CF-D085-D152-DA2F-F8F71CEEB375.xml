@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F00385CF-D085-D152-DA2F-F8F71CEEB375" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_SOCIAL_ACCOUNT">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>NETFLIX_SOCIAL_ACCOUNT</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIAL_ACCOUNT_MEMBER_EMAIL" id="11242CFD-EFC4-B837-FF70-235E3BCC5B3C">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_SOCIAL_ACCOUNT</sourceObjSchema>
+<sourceObjName>SOCIAL_ACCOUNT_MEMBER_EMAIL</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="385DC68B-1921-B224-6697-1DFF2C6910EB" referredColumn="36D56E21-2C67-58B8-1360-AE0CC7586814"/>
+</associations>
+</Column>
+<Column name="SOCIAL_ACCOUNT_MEMBER_SOCIAL" id="ECEB9C2D-803F-0067-C28B-16F58440FC8F">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_SOCIAL_ACCOUNT</sourceObjSchema>
+<sourceObjName>SOCIAL_ACCOUNT_MEMBER_SOCIAL</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD9B6F1C-274B-C584-B15A-9DB847D7BB4A" referredColumn="5D83B5E6-0E3F-BDED-1E17-A585D85E6F5A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2EC0844-8FFF-AD11-998E-A2E7D79ECE3A" name="IX_NETFLIX_SOCIAL_ACCOUNT">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>IX_NETFLIX_SOCIAL_ACCOUNT</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11242CFD-EFC4-B837-FF70-235E3BCC5B3C"/>
+<colUsage columnID="ECEB9C2D-803F-0067-C28B-16F58440FC8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E13AAA7-256B-456F-4708-C3F9408DE548" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="IX_NETFLIX_SOCIAL_ACCOUNT">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>IX_NETFLIX_SOCIAL_ACCOUNT</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11242CFD-EFC4-B837-FF70-235E3BCC5B3C"/>
+<colUsage columnID="ECEB9C2D-803F-0067-C28B-16F58440FC8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="700C4D76-E677-AC98-56A8-9480F1C7BF5B" name="FK_SA_MEMBER_SOCIAL">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECEB9C2D-803F-0067-C28B-16F58440FC8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3E07612-0809-65DF-F95F-5F135B46D23F" name="FK_SOCIAL_ACCOUNT_MEMBER_EMAIL">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11242CFD-EFC4-B837-FF70-235E3BCC5B3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

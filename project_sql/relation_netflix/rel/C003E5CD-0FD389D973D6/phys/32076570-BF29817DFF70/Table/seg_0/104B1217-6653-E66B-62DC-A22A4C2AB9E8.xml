@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="NETFLIX_MOVIE" directorySegmentName="seg_0" id="104B1217-6653-E66B-62DC-A22A4C2AB9E8">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>E4207F45-638D-7D68-B2F5-C79C4D6A6503</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B243B435-4FD9-C0E6-F47B-39620BA63ABF</segment>
+<tableSpace>3AA85E1A-AFFE-A01E-1602-1EAB74E6DAA5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MOVIE_GENRE" id="1900F6AF-56F8-AC50-0568-659F364CF510">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOVIE_CAST" id="1D7CE576-8B83-8AD3-8543-5E5DFAD626E6">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOVIE_RELEASE_DATE" id="4CCD9939-657F-88DA-A726-195CE68AFA5F">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOVIE_CONTENT" id="67ACAC10-ADFC-388C-7C8D-9334BE1BA1FD">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOVIE_ID" id="8D6D3E2D-8CE7-A5B0-53C2-F44A917953A5">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOVIE_FAVORITE" id="91D2010C-FE06-09F2-25DE-394566F892B6">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="NETFLIX_MOVIE_PK" id="BC48D3AC-E415-DFEC-4FE9-713266643FAF">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>E4207F45-638D-7D68-B2F5-C79C4D6A6503</schemaObject>
+<segment>3D261185-2371-07CD-59E5-C1F615BEB14A</segment>
+<tableSpace>3AA85E1A-AFFE-A01E-1602-1EAB74E6DAA5</tableSpace>
+<indexSegment>3D261185-2371-07CD-59E5-C1F615BEB14A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

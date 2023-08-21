@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="relation_netflix" id="7F4C992C-BF18-BDA8-CEF9-CDAD2937700C" version="3.5">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:34 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7F4C992C-BF18-BDA8-CEF9-CDAD2937700C</designId>
+</OSDM_Design>

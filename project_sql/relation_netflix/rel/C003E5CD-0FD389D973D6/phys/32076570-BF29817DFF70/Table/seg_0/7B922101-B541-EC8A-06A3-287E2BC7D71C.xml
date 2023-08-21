@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="NETFLIX_MOVIE_DISTRIBUTION" directorySegmentName="seg_0" id="7B922101-B541-EC8A-06A3-287E2BC7D71C">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>E4207F45-638D-7D68-B2F5-C79C4D6A6503</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B243B435-4FD9-C0E6-F47B-39620BA63ABF</segment>
+<tableSpace>3AA85E1A-AFFE-A01E-1602-1EAB74E6DAA5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MOVIE_DISTRIBUTION_DATE" id="0EE0E387-B905-3BDC-ED72-52F3B0257DF8">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<defaultValue>sysdate</defaultValue>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

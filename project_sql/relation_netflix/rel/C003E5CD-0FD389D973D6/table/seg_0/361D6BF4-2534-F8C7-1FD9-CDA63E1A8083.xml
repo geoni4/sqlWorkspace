@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="361D6BF4-2534-F8C7-1FD9-CDA63E1A8083" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_SOCIAL">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>NETFLIX_SOCIAL</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIAL_NO" id="CCD8D9B3-6374-9FB3-6E9C-D3DA1EB96B93">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_SOCIAL</sourceObjSchema>
+<sourceObjName>SOCIAL_NO</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOCIAL_PUBLISHER" id="5D83B5E6-0E3F-BDED-1E17-A585D85E6F5A">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_SOCIAL</sourceObjSchema>
+<sourceObjName>SOCIAL_PUBLISHER</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DA505F0-D265-0699-B228-2EA077EEFBBF" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_SOCIAL_PK">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>SYS_C007245</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCD8D9B3-6374-9FB3-6E9C-D3DA1EB96B93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CF6130B-4DFC-E7AC-A568-E1360A6401FF" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_SOCIAL_SOCIAL_PUBLISHER_UN">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>SYS_C007246</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D83B5E6-0E3F-BDED-1E17-A585D85E6F5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

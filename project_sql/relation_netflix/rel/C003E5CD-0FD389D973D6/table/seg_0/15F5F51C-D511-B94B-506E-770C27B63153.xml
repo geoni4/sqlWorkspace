@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15F5F51C-D511-B94B-506E-770C27B63153" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_AUTH">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>NETFLIX_AUTH</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AUTH_MEMBER_EMAIL" id="3A08B034-64DB-081E-4629-3EB887281ECD">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_AUTH</sourceObjSchema>
+<sourceObjName>AUTH_MEMBER_EMAIL</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DA97F02-C7C7-9A36-9868-D523280CD981" referredColumn="36D56E21-2C67-58B8-1360-AE0CC7586814"/>
+</associations>
+</Column>
+<Column name="AUTH_MEMBER_AUTHORITY" id="76528DEB-82BB-3AC4-1AAE-37FA57D766FF">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_AUTH</sourceObjSchema>
+<sourceObjName>AUTH_MEMBER_AUTHORITY</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43B01ED1-0B37-DE05-89A8-3745AF4D4A7C" name="IX_NETFLIX_AUTH">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>IX_NETFLIX_AUTH</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A08B034-64DB-081E-4629-3EB887281ECD"/>
+<colUsage columnID="76528DEB-82BB-3AC4-1AAE-37FA57D766FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDAA6CB8-8CDD-5CA0-5CB9-B66D7B832044" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="IX_NETFLIX_AUTH">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>IX_NETFLIX_AUTH</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A08B034-64DB-081E-4629-3EB887281ECD"/>
+<colUsage columnID="76528DEB-82BB-3AC4-1AAE-37FA57D766FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53BD1A8D-FFAA-6561-4D7D-2EEEFAF5BDD6" name="FK_AUTH_MEMBER_EMAIL">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A08B034-64DB-081E-4629-3EB887281ECD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

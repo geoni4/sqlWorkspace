@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="C583A530-9EA1-B74D-2821-2B82914766F1" mainViewID="974868A9-11DF-8E27-7468-DD6879DD4F35">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:34 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

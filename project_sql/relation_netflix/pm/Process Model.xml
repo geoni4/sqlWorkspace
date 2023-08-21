@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="FAF5ED46-C054-EE4D-BE87-9342738C26CC">
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:34 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

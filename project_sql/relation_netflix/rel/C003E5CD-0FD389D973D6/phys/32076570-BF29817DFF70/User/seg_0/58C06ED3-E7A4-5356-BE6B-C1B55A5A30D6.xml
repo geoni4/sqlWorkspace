@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="NETFLIX" directorySegmentName="seg_0" id="58C06ED3-E7A4-5356-BE6B-C1B55A5A30D6">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjName>NETFLIX</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:50 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<schemaObject>E4207F45-638D-7D68-B2F5-C79C4D6A6503</schemaObject>
+</UserOraclev10g>

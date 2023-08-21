@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A77DF2F-1E22-2694-58B1-5B5038F41125" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_QA_BOARD">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>NETFLIX_QA_BOARD</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QA_BOARD_NO" id="5AA4717C-4BA0-9E18-8DDC-1109EFB5DEF9">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_NO</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QA_BOARD_WRITE" id="D9125F33-3D97-53A2-59E7-C3EC3698C4CC">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_WRITE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QA_BOARD_TITLE" id="B80D1612-2EA3-E1AF-3F09-6A75FBD4E8B6">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_TITLE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QA_BOARD_CONTENT" id="AE95A7AE-F8AE-056C-1C4E-DB4AA1EE1169">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_CONTENT</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QA_BOARD_CREATED_DATE" id="DCD7AADA-1BB0-CCFE-7341-66ADECCF1E5B">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_CREATED_DATE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QA_BOARD_MODIFIED_DATE" id="90FB15DD-85B0-C348-26A7-20613C73DBB6">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_MODIFIED_DATE</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QA_BOARD_HIT" id="5FD7608E-5609-A1D3-23A8-A1350D925AB2">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX_QA_BOARD</sourceObjSchema>
+<sourceObjName>QA_BOARD_HIT</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:51 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49389000-5E34-B422-8FCE-A4054583D53F" schemaObject="E4207F45-638D-7D68-B2F5-C79C4D6A6503" name="NETFLIX_QA_BOARD_PK">
+<sourceConnName>netflix</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>SYS_C007236</sourceObjName>
+<createdBy>tatel</createdBy>
+<createdTime>2023-08-21 05:46:52 UTC</createdTime>
+<ownerDesignName>relation_netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AA4717C-4BA0-9E18-8DDC-1109EFB5DEF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
